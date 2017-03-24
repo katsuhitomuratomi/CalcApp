@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        //Log.d("test",editText1.getText().toString());
+
         Intent intent = new Intent(this, Main2Activity.class);
         int id = v.getId();
         String num1 = editText1.getText().toString();
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    //入力されたものが数値のみかの確認
+
     public boolean hantei(String num) {
         try {
             double n = Double.parseDouble(num);
